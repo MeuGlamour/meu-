@@ -1,0 +1,267 @@
+.dropbtn {
+  background-color: white;
+  color: rgb(235, 229, 229);
+  padding: 40px;
+  font-size: 12px;
+  border: NONE;
+  cursor: pointer;
+}
+
+.navbar{
+/* margin-left:auto; 
+
+
+  just an estimate of your sidebar's width 
+  width: 80%;
+  float: right;*/
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:greenyellow;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} 
+
+.dropdown-content a {
+  color:green
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+body {
+  padding-top: 80px;
+}
+
+.show-cart li {
+  display: flex;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 200px;
+  height: 200px;
+  align-self: center;
+}
+.cd-cart__trigger,
+.cd-cart__content {
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  transition: transform .2s;
+}
+
+.cd-cart--empty .cd-cart__trigger,
+.cd-cart--empty .cd-cart__content { // hide cart
+  transform: translateY(150px);
+}
+.cd-cart__layout {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+  height: 72px;
+  width: 72px;
+  border-radius: var(--radius);
+  transition: height .4s .1s, width  .4s .1s, box-shadow .3s;
+  transition-timing-function: cubic-bezier(.67,.17,.32,.95);
+  background: var(--cd-color-3);
+  box-shadow: 0 4px 30px rgba(#000, .17);
+}
+
+.cd-cart--open .cd-cart__layout {
+  height: 100%;
+  width: 100%;
+  transition-delay: 0s;
+}
+
+.cd-cart__product--deleted { // this class is added to an item when it is removed form the cart
+  position: absolute;
+  left: 0;
+  width: 100%; 
+  opacity: 0;
+  animation: cd-item-slide-out .3s forwards;
+}
+
+@keyframes cd-item-slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  table-layout:fixed;
+}
+
+
+img:hover {
+  opacity: 0.5;
+  transition:opacity 1s;
+  width: 0px;
+  height: 0px;
+}
+
+  .vertical-menu {
+    width: 20%;
+    height: 90%;
+    overflow-y: auto;
+    float: left;
+  
+    
+  }
+  .tables{
+  margin-right:auto; 
+  float: right;
+  width: 80%;
+  
+  }
+  .vertical-menu a {
+    background-color: #eee;
+    color:green;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color:greenyellow;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #3498DB;
+    color: white;
+  
+  }
+  .logomarca{
+  float: left;
+  float: TOP;
+  width: 10%;
+  height: 40px;
+  margin-left: 1;
+  }
+  .btn{
+  float: right;
+  margin-right: 5px;
+  
+  }
+  .titulo{
+       font-size:30px;
+       border:blue;
+       background-color: blue;
+       font-family:'Lucida Sans';
+       color:whitesmoke;
+       border-top-left-radius: 25px;
+       border-bottom-right-radius: 25px;
+       text-align: CENTER;
+            
+  }
+  .NomeProduto{
+       text-align: center;
+       font-size: 18px;
+       width: 130px;
+       max-width: 100%;
+       font-family: 'verdana';
+  }
+  .foto{
+       background-color: whitesmoke;
+       align-items: center;
+       border-radius: 15px;
+       text-align: center;
+       height: 315px;
+       width: 150px;
+       max-width: ;
+       max-height: ;
+      }
+  .preço{
+       border-top-left-radius: 25px;
+       border-bottom-right-radius: 25px;
+       background-color: whitesmoke;
+       text-align: center;
+       font-size: 6px;
+       font-family:'arial black';
+       font-size: 35px;
+       color:BLUE;
+       width: 130px;
+  }
+  .botao{
+       text-align: center;
+       font-size: 40px;
+       border-radius: 100px;
+  
+  }
+  .vertical-menu {
+    width: 20%;
+    height: 90%;
+    overflow-y: auto;
+    float: left;
+  }
+  .tables{
+  margin-right:auto; 
+  float: right;
+  width: 80%;
+  
+  }
+  .vertical-menu a {
+    background-color: #eee;
+    color:black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #3498DB;
+    color: white;
+  
+  }
+  .logomarca{
+  float: left;
+  float: TOP;
+  width: 10%;
+  height: 40px;
+  margin-left: 1;
+  }
+  .btn{
+  float: right;
+  margin-right: 5px;
+  
+  }

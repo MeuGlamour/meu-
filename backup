@@ -1,0 +1,14 @@
+var cartAr = shoppingCart.listCart();
+var loc = [];
+var locl = [];
+var count = 0;
+for u in nomelist {
+	for(var i in cartAr) {
+		if u.inclues(i){
+		locl.push(u);
+		locl.push(cartAr[i].price);
+		loc.push(locl);
+		count +=1;
+		}
+	alert(loc[0]);
+}}
